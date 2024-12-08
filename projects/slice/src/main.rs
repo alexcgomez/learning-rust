@@ -32,7 +32,8 @@ fn main() {
     let _word = first_word_slice(my_string_literal);
 
     println!("{my_string}");
-    println!("Pointer: {:p}", my_string.as_ptr());
+    println!("Stack address: {:p}", &my_string);
+    println!("Heap address: {:p}", my_string.as_ptr());
     println!("Capacity: {}", my_string.capacity());
     println!("Length: {}", my_string.len());
 }
